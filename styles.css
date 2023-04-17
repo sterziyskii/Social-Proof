@@ -1,0 +1,151 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, fi 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Variables */
+
+:root {
+    --dark-pink: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --main-pink: hsl(303, 10%, 53%);
+    --light-pink: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+    --font: 'League Spartan', sans-serif;
+    /* Font size 15px */
+}
+
+body {
+    /* padding: 60px 200px 40px 160px; */
+
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 2fr 1fr;
+	
+}
+
+#main-div {
+	grid-row: 1 / span 1;
+	grid-column: 2 / span 3;
+}
+
+h1 {
+	font-family: var(--font);
+	font-size: 40px;
+	font-weight: 700;
+	color: var(--dark-pink);
+	padding-top: 70px;
+	padding-right: 25px;
+}
+
+#main-div > p {
+	padding-top: 25px;
+	font-size: 15px;
+	font-weight: 400;
+	font-family: var(--font);
+	color: var(--main-pink);
+}
+
+#rating-stars {
+	grid-column: 6 / span 6;
+	padding-top: 100px;
+}
+
+.rating-1 {
+	display: flex;
+	background-color: var(--light-pink);
+
+}
+
+.rating-1 > p {
+	padding-left: 50px;
+	font-weight: 700;
+	font-family: var(--font);
+	font-size: 15px;
+	color: var(--dark-pink);
+
+}
+
+.rating-2 {
+	padding-top: 25px;
+	display: flex;
+	background-color: var(--light-pink);
+}
+
+.rating-2 > p {
+	padding-left: 50px;
+	font-weight: 700;
+	font-family: var(--font);
+	font-size: 15px;
+	color: var(--dark-pink);
+
+}
+
+.rating-3 {
+	padding-top: 25px;
+	display: flex;
+	background-color: var(--light-pink);
+}
+
+.rating-3 > p {
+	padding-left: 50px;
+	font-weight: 700;
+	font-family: var(--font);
+	font-size: 15px;
+	color: var(--dark-pink);
+
+}
+
+
+
+#bottom-div {
+	grid-column: 2 / span 10;
+	grid-row: 2 / span 1;
+	display: flex;
+}
